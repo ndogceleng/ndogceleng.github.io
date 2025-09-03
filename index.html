@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKB Caffe's Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff; /* Ubah warna teks menjadi putih agar kontras */
+            text-align: center;
+            background-image: url('dashboard.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            background-image: url('container.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal */
+            max-width: 90%;
+            width: 500px;
+        }
+
+        h1 {
+            color: #fff; /* Ubah warna judul menjadi putih */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambah bayangan teks untuk lebih menonjol */
+        }
+
+        .menu-button {
+            background-color: #2ecc71; /* Warna hijau cerah untuk kontras */
+            color: white;
+            padding: 18px 40px; /* Padding lebih besar */
+            border: none;
+            border-radius: 10px; /* Sudut lebih melengkung */
+            font-size: 1.3em; /* Ukuran font lebih besar */
+            font-weight: bold; /* Teks lebih tebal */
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            margin-top: 25px; /* Jarak lebih jauh dari judul */
+            box-shadow: 0 6px 20px rgba(46, 204, 113, 0.5); /* Bayangan lebih jelas */
+        }
+
+        .menu-button:hover {
+            background-color: #27ae60; /* Warna hijau lebih gelap saat di-hover */
+            transform: translateY(-5px); /* Efek terangkat lebih tinggi */
+            box-shadow: 0 8px 25px rgba(46, 204, 113, 0.6); /* Bayangan lebih besar saat di-hover */
+        }
+        
+        .menu-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px 60px;
+            }
+
+            h1 {
+                font-size: 3.5em;
+                margin-bottom: 30px;
+            }
+
+            .menu-button {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RKB Caffe's</h1>
+        <a href="menu.html" class="menu-button">Lihat Menu Kami</a>
+    </div>
+</body>
+</html>
